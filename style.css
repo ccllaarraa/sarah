@@ -46,7 +46,7 @@ background: #E0E0E0;
 body {
         -ms-overflow-style: none;  /* IE and Edge */
         scrollbar-width: none;  /* Firefox */
-       
+        background: #E0E0E0;
 }
 html {
     overflow-y:scroll;
@@ -58,7 +58,7 @@ a:visited { text-decoration: none;     color: #CE1010; }
 a:hover { text-decoration: none;   color: #CE1010;}
 a:focus { text-decoration: none;   color: #CE1010; }
 a:hover, a:active { text-decoration: none;   color: #CE1010;}
-a:hover {text-decoration: underline; };
+a:hover {   border-bottom: 3px dotted #CE1010;; };
 .btn:focus,
 .btn.focus {
     box-shadow: none !important
@@ -72,9 +72,13 @@ ul {
     position: fixed;
     color: #CE1010;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
     width: 100%;
     padding: 15px;
+  
+}
+[aria-current] {
+    border-bottom: 3px dotted #CE1010;
 }
 
 
