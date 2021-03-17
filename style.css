@@ -16,6 +16,14 @@ Author: Clara Pasteau
    }
 
 
+@font-face {
+    font-family: 'sniglet';
+    src: url('assets/fonts/Sniglet-Regular.ttf') ;
+    font-weight: normal;
+    font-style: normal;
+   }
+
+
 * {
     margin: 0;
     padding: 0;
@@ -28,8 +36,9 @@ Author: Clara Pasteau
 
 
 body {
+    cursor: crosshair;
         background: transparent;
-        font-family: 'authentic';
+        font-family: 'authentic', Arial, Helvetica, sans-serif;
 }
 body::-webkit-scrollbar {
     display: none;
@@ -67,7 +76,7 @@ ul {
     list-style: none;
     text-decoration: none;
 }
-
+header {z-index: 10;}
 .sarah-menu {
     position: fixed;
     color: #CE1010;
@@ -91,10 +100,100 @@ ul {
     line-height: 26px;
 }
 
+.works, .pages {
+    color:#CE1010;
+    margin-top: 200px;
+    position: absolute;
+    padding: 15px;
+    width: 100%;
+}
 
+
+.work {
+    display: flex;
+    margin-bottom: 100px;
+}
+.works-left {
+    width: 270px;
+}
+.works-left-title {
+font-family: 'sniglet', Arial, Helvetica, sans-serif;
+font-size: 24px;
+border-bottom: 3px dotted #CE1010;
+}
+.works-left-cat{
+    padding: 10px 0px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'sniglet', Arial, Helvetica, sans-serif;
+
+}
+.works-left-detail {
+    font-size: 12px;
+    line-height: 17px;
+    font-family: 'authentic', Arial, Helvetica, sans-serif;
+}
+.wp-block-button__link {
+    font-size: 16px !important;
+    line-height: 17px;
+    font-family: 'authentic', Arial, Helvetica, sans-serif;
+    color: #CE1010;
+    border-bottom: 3px dotted #CE1010;
+    background-color: transparent;
+    border-radius: unset;
+    padding: 0px;
+    margin-top: 7px;
+
+}
+a.wp-block-button__link { color: #CE1010 !important;}
+.wp-block-button::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    -moz-border-radius: 7.5px;
+    -webkit-border-radius: 7.5px;
+    border-radius: 7.5px;
+    background-color: #CE1010;
+    margin-right: 10px;
+}
+.wp-block-buttons {
+    margin-left: 50px;
+}
+
+.works-content p {
+    margin: 50px 0;
+}
+#slider {
+    max-width: 700px;
+    margin-top: 50px;
+}
+.flex-caption {
+    margin: 10px 0 !important;
+}
+.flexslider{
+    background: transparent  !important;
+    border: none !important;
+   
+}
+
+#slider {
+    margin: 50px 0 0 0 !important;
+}
+
+#carousel ul li img {
+    width: 200px;
+}
+.flexslider:hover .flex-direction-nav .flex-next, .flexslider:hover .flex-direction-nav .flex-prev {
+    display: none !important;
+}
+figure img {
+    object-fit: cover;
+}
+#carousel ul li img {
+    cursor: pointer;
+}
 /* responsive */
-
-
 @media only screen and (max-width: 1100px) {
  
 
