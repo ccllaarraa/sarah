@@ -14,21 +14,27 @@ while ( $loop->have_posts() ) : $loop->the_post();
 
 ?>
 <div class="work">
-    <div class="works-left">
+<div class="works-left">
         <span class="works-left-title">  <?php  the_title(); ?></span>
-        <div class="works-left-cat">  <?php   the_field("category_name"); ?></div>
-        <div class="works-left-detail">  <?php    the_field("detail"); ?></div>
+        <?php
+            $detail = get_field('project_detail');
+            if( $detail ): ?>
+                <div class="works-left-cat">  <?php echo $detail['category_name']; ?></div>
+                <div class="works-left-detail">  <?php echo $detail['detail']; ?></div>
+            <?php endif; ?>
     </div>
 
     <div class="works-content">
 
-        <?php
-           
-                    the_content();
-              
+    <?php if( have_rows('add_blocks') ): ?>
 
-        
-        ?>
+  
+    <?php while ( have_rows('add_blocks') ) : the_row(); ?>
+<h1>hello</h1>
+
+<?php endwhile; ?>
+<?php endif; ?>
+
 
 <?php if( have_rows('slides') ): ?>
     <div id="slider" class="flexslider">

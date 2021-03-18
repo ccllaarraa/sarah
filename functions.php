@@ -45,7 +45,7 @@ function op_menus() {
   add_action('init', 'op_menus');
 
 
-   add_image_size('slider', 1200, 700, true );
+   add_image_size('slider', 1200, 1200, true );
 
 
 ?>

@@ -36,8 +36,6 @@ Author: Clara Pasteau
 
 
 body {
-    cursor: crosshair;
-        background: transparent;
         font-family: 'authentic', Arial, Helvetica, sans-serif;
 }
 body::-webkit-scrollbar {
@@ -76,7 +74,7 @@ ul {
     list-style: none;
     text-decoration: none;
 }
-header {z-index: 10;}
+header {z-index: 10;  }
 .sarah-menu {
     position: fixed;
     color: #CE1010;
@@ -165,10 +163,10 @@ a.wp-block-button__link { color: #CE1010 !important;}
     margin: 50px 0;
 }
 #slider {
-    max-width: 700px;
+    max-width: 650px;
     margin-top: 50px;
 }
-.flex-caption {
+.flex-caption , .wp-block-image figcaption{
     margin: 10px 0 !important;
 }
 .flexslider{
@@ -182,7 +180,8 @@ a.wp-block-button__link { color: #CE1010 !important;}
 }
 
 #carousel ul li img {
-    width: 200px;
+    width: 100px;
+    height: 80px;
 }
 .flexslider:hover .flex-direction-nav .flex-next, .flexslider:hover .flex-direction-nav .flex-prev {
     display: none !important;
@@ -190,8 +189,42 @@ a.wp-block-button__link { color: #CE1010 !important;}
 figure img {
     object-fit: cover;
 }
+#carousel {
+    max-width: 750px;
+}
+.flexslider .slides img {
+    height: auto;
+    max-height: 400px !important;
+    object-fit: contain !important;
+    max-width: 650px !important;
+}
 #carousel ul li img {
     cursor: pointer;
+}
+#carousel ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+}
+#carousel ul li {
+    width: auto !important;
+    margin: 5px !important;
+}
+
+#carousel .flex-viewport {
+    display: flex;
+}
+#carousel ul.slides {
+    transform: none !important;
+}
+.wp-block-image img {
+    max-width: 650px;
+    height: auto;
+}
+
+.wp-block-embed iframe {
+    min-height: 370px;
+
+    min-width: 650px !important;
 }
 /* responsive */
 @media only screen and (max-width: 1100px) {

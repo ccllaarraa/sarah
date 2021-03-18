@@ -23,7 +23,7 @@ $(window).on('load', function() {
 	  animationLoop: false,
 	  slideshow: false,
 	  sync: "#carousel",
-	  itemWidth: 700,
+	  itemWidth: 650,
 	});
   });
 
