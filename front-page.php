@@ -70,7 +70,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
             
             $image = get_sub_field('image');
             $imageurl = $image['sizes']['slider'];
-            $title = get_sub_field('title');
+            $title = get_sub_field('image_caption');
             
             ?>
 
@@ -110,8 +110,10 @@ while ( $loop->have_posts() ) : $loop->the_post();
              <div class="video-ctn"> 
                 <div class="embed-ctn">
                     <?php echo  $image; ?>
-                 </div>
+                </div>
+                <div class="video-caption">
                  <span><?php echo $caption; ?> </span>
+                 </div>
             </div>  
 
             <?php endwhile; ?>

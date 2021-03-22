@@ -60,6 +60,7 @@ html {
 }
 a {
     text-decoration: none;
+    color: #CE1010;
 }
 a:visited { text-decoration: none;     color: #CE1010; }
 a:hover { text-decoration: none;   color: #CE1010;}
@@ -96,6 +97,7 @@ header {z-index: 10;  }
 .menu-right {
     font-size: 18px;
     line-height: 26px;
+    text-align: right;
 }
 
 .works, .pages {
@@ -112,11 +114,13 @@ header {z-index: 10;  }
     margin-bottom: 100px;
 }
 .works-left {
-    width: 270px;
+    width: 300px;
+    padding-right: 20px;
 }
 .works-left-title {
 font-family: 'sniglet', Arial, Helvetica, sans-serif;
-font-size: 24px;
+font-size: 22px;
+line-height: 39px;
 border-bottom: 3px dotted #CE1010;
 }
 .works-left-cat{
@@ -168,7 +172,7 @@ border-bottom: 3px dotted #CE1010;
     margin-top: 50px;
 }
 .flex-caption , .wp-block-image figcaption{
-    margin: 10px 0 !important;
+    margin: 7px 0 !important;
 }
 .flexslider{
     background: transparent  !important;
@@ -177,7 +181,7 @@ border-bottom: 3px dotted #CE1010;
 }
 
 #slider {
-    margin: 50px 0 0 0 !important;
+    margin: 20px 0 0 0 !important;
 }
 
 #carousel ul li img {
@@ -243,9 +247,33 @@ figure img {
 .image-ctn span {
     margin-top: 7px;
 }
-.video-ctn span {
-    margin-top: 7px;
+.video-caption {
+    margin-top: 3px;
 }
+
+
+.paragraph {
+    margin: 40px 0;
+}
+
+.flexslider {
+    margin: 0 0 40px !important;
+
+}
+
+.video-ctn, .image-ctn {
+    margin: 0 0 40px 0;
+}
+
+.pages {
+    padding-left: 280px;
+}
+.paragraph, .pages {
+    font-size: 18px;
+    line-height: 27px;
+}
+
+
 /* responsive */
 @media only screen and (max-width: 1100px) {
  
@@ -253,14 +281,55 @@ figure img {
 }
 
 @media only screen and (max-width: 770px) {
-   
+    .work {
+    flex-direction: column;
+}
+.works-left {
+    width: 50vw;
+    padding-bottom: 30px;
+}
+
+.flex-direction-nav .flex-next, .flex-direction-nav .flex-prev {
+    display: none;
+}
+.pages {
+    padding-left: 20px;
+}
+.paragraph, .pages {
+    font-size: 16px;
+    line-height: 23px;
+}
+
+
 }
  
  
  
  @media only screen and (max-width: 670px) {
- 
+
+    .embed-ctn iframe {
+        width: 92vw !important;
+        max-height: 200px;
+    }
+    .flexslider .slides img {
+        max-height: 250px !important;
+    }
+    .flex-caption, .image-ctn span, .video-caption span {
+        font-size: 14px;
+    }
+    .links {
+        margin: 20px 0 20px 0px
+    }.works-left {
+        width: 90vw;
+    }
+    #carousel ul li img {
+        width: 75px;
+        height: 70px;
+    }
 }
 @media only screen and (max-width: 330px) {
-   
+    .embed-ctn iframe {
+        width: 92vw !important;
+        max-height: 170px;
+    }
 }
