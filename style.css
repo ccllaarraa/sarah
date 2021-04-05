@@ -167,7 +167,7 @@ border-bottom: 3px dotted #CE1010;
 .works-content p {
     margin: 50px 0;
 }
-#slider {
+.c_slider {
     max-width: 639px;
     margin-top: 50px;
 }
@@ -175,16 +175,16 @@ border-bottom: 3px dotted #CE1010;
     margin: 7px 0 !important;
 }
 .flexslider{
-    background: transparent  !important;
+    background: pink  !important;
     border: none !important;
    
 }
 
-#slider {
+.c_slider {
     margin: 20px 0 0 0 !important;
 }
 
-#carousel ul li img {
+.c_carousel ul li img {
     width: 100px;
     height: 80px;
 }
@@ -194,8 +194,12 @@ border-bottom: 3px dotted #CE1010;
 figure img {
     object-fit: cover;
 }
-#carousel {
-    max-width: 750px;
+.c_carousel {
+    max-width: 750px  !important;
+}
+.c_carousel .slides img {
+    width: 100px  !important;
+    height: 80px  !important;
 }
 .flexslider .slides img {
     height: auto;
@@ -203,22 +207,22 @@ figure img {
     object-fit: contain !important;
     max-width: 650px !important;
 }
-#carousel ul li img {
+.c_carousel ul li img {
     cursor: pointer;
 }
-#carousel ul {
+.c_carousel ul {
     display: flex !important;
     flex-wrap: wrap !important;
 }
-#carousel ul li {
+.c_carousel ul li {
     width: auto !important;
     margin: 5px !important;
 }
 
-#carousel .flex-viewport {
+.c_carousel .flex-viewport {
     display: flex;
 }
-#carousel ul.slides {
+.c_carousel ul.slides {
     transform: none !important;
 }
 .wp-block-image img {
@@ -322,7 +326,7 @@ figure img {
     }.works-left {
         width: 90vw;
     }
-    #carousel ul li img {
+    .c_carousel ul li img {
         width: 75px;
         height: 70px;
     }

@@ -64,7 +64,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
            <!-- add slider -->
     <?php if( get_row_layout() == 'add_a_slider' ): ?>
      <?php if( have_rows('slides') ): ?>
-        <div id="slider" class="flexslider">
+        <div  class="flexslider c_slider">
          <ul class="slides">
             <?php while( have_rows('slides') ): the_row(); 
             
@@ -82,7 +82,7 @@ while ( $loop->have_posts() ) : $loop->the_post();
         </ul>
     </div>
 
-    <div id="carousel" class="flexslider">
+    <div  class="flexslider c_carousel">
         <ul class="slides">
             <?php while( have_rows('slides') ): the_row(); 
             
